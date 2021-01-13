@@ -1,2 +1,2 @@
 # ErrorGamer2000.github.io
-Test for my website
+This is my website homepage. Please do not use any of the code. See the website at ErrorGamer2000.github.io/home
