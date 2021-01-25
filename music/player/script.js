@@ -49,9 +49,9 @@ window.onload = function() {
       for (var i = 0; i < bufferLength; i++) {
         barHeight = dataArray[i];
         
-        var r = barHeight + (25 * (i/bufferLength));
-        var g = 250 * (i/bufferLength);
-        var b = 50;
+        var b = barHeight + (10 * (i/bufferLength));
+        var g = 255 * (0.3+(i/bufferLength) * 2);
+        var r = 255 - barHeight;
 
         ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
         ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
@@ -86,6 +86,10 @@ function logMouseMove(e) {
 	} else {
 	    audio.style.display = "block"
 	}
+  var inputbar = document.getElementById('inputs')
+  if (Number(mousePos.y) > 50) {
+	    inputbar.style.display = "none"
+	} else {
+	    inputbar.style.display = "block"
+	}
 }
-
-
