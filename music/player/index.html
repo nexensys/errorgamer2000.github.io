@@ -2,18 +2,38 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title id="title">Online Music Player and Visualizer</title>
-  <link rel="icon" href="./favicon.png">
+  <title>CodePen - Music player</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title id="title">Online Music Player and Visualizer</title>
+  <link rel="icon" href="./favicon.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <div id="content">
-  <input type="file" id="thefile" accept="audio/*" multiple />
+  <div id="inputs">
+    <input type="file" id="thefile" accept="audio/*" multiple />
+  </div>
   <canvas id="canvas"></canvas>
   <audio id="audio" controls></audio>
 </div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
 <!-- partial -->
   <script  src="./script.js"></script>
 
