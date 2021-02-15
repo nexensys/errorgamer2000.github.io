@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Themeify - Home</title>
+    <link rel="icon" href="./icon.svg">
+    <link rel="preload" href="banner.jpg" as="image">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="./dist/FileSaver.js"></script>
+    <style type="text/css" media="screen">
+        #csseditor {
+            position: absolute;
+            right: 0;
+            top: 50px;
+            left: 10%;
+            height: 300px;
+            width: 40%;
+            border-radius: 5px;
+        }
+
+        #jseditor {
+            position: absolute;
+            right: 0;
+            top: 50px;
+            right: 10%;
+            height: 300px;
+            width: 40%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ext-eg2000-Themeify" hidden></div>
+    <div id="buttons">
+        <div class="button button-7" id="">
+            <div class="dub-arrow"><img src="https://api.iconify.design/uil:github.svg?download=true&box=true&color=%23626262&inline=false&height=auto" alt="" /></div>
+            <a href="#">View on Github</a>
+        </div>
+        <div class="button button-7" id="">
+            <div class="dub-arrow"><img src="https://api.iconify.design/uil:download-alt.svg?download=true&box=true&color=%23626262&inline=false&height=auto" alt="" /></div>
+            <a href="#">Install</a>
+        </div>
+    </div>
+    <div id="titlebar">
+        <p id="title-b">Themeify</p>
+    </div>
+    <image id="ext-icon" src="icon.svg">
+        <p id="title-a">Themeify</p>
+        <p id="subtitle">Custom themes on any website</p>
+        <div class="banner">
+            <div id="banner"></div>
+            <div class="banner-mask">
+                <image src="wave.svg" class="wave-a"></image>
+                <image src="wave.svg" class="wave-b"></image>
+                <image src="wave.svg" class="wave-c"></image>
+            </div>
+        </div>
+        <div class="tile tile-a">
+            <p class="large">Works on all websites<span style="font-size: 15px;">*</span></p>
+            <p>
+                Themeify can change the look of any website. <br>
+                <br> This includes all of the most popular sites, such as Google, Github, Youtube and more! <br>
+                <br>
+                <span style="font-size: 8px;">*This does not include sites that are blocked by the browser, <br>such as the new tab page</span>
+            </p>
+        </div>
+        <div class="tile tile-b">
+            <p class="large">Fully Customizable</p>
+            <p>
+                Themeify is an easy to use, custom web styling engine. <br>
+                <br> It allows you to use both your own styles and styles that others have created.
+            </p>
+        </div>
+        <div class="tile tile-c">
+            <p class="large">Easy to use</p>
+            <p>
+                It's easy to add themes to Themeify! <br>
+                <br> Just create a theme right here in the <a href="#editor" style="color: #777777;">editor</a>, or <a href="" style="color: #777777;">browse for a style</a>
+            </p>
+        </div>
+        <div id="editor">
+            <div class="col-3 input-effect">
+                <input class="effect-24" id="site" type="text" placeholder="Website - Ex: errorgamer2000.github.io">
+                <span class="focus-bg"></span>
+            </div>
+            <div class="button button-7 add" id="" style="margin: 0">
+                <div class="dub-arrow"><img src="https://api.iconify.design/uil:upload-alt.svg?download=true&box=true&color=%23626262&inline=false&height=auto" alt="" /></div>
+                <a href="">Add Theme</a>
+            </div>
+            <div id="csseditor">/* Style code (CSS) goes here */</div>
+            <div id="jseditor">//Javascript goes here</div>
+            <select id='theme-css' name='theme-css'>
+                
+            </select>
+            <p class="theme-label" style="left: 10%">Theme:</p>
+            <select id='theme-js' name='theme-js'>
+                
+            </select>
+            <p class="theme-label" style="left: 50%">Theme:</p>
+            <div class="button button-7 save" id="save" style="margin: 0">
+                <div class="dub-arrow"><img src="https://api.iconify.design/uil:save.svg?download=true&box=true&color=%23626262&inline=false&height=auto" alt="" /></div>
+                <a href="">Save to computer</a>
+            </div>
+            <input type='file' id='uploader' accept=".themeify" hidden>
+            <div class="button button-7 load" id="load" style="margin: 0">
+                <div class="dub-arrow"><img src="https://api.iconify.design/uil:folder-open.svg?download=true&box=true&color=%23626262&inline=false&height=auto" alt="" /></div>
+                <a href="">Load from computer</a>
+            </div>
+        </div>
+        <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            var csseditor = ace.edit("csseditor");
+            csseditor.setTheme("ace/theme/tomorrow_night_eighties");
+            csseditor.session.setMode("ace/mode/css");
+            var jseditor = ace.edit("jseditor");
+            jseditor.setTheme("ace/theme/tomorrow_night_eighties");
+            jseditor.session.setMode("ace/mode/javascript");
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
