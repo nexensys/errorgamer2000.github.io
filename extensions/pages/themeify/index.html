@@ -17,7 +17,7 @@
             right: 0;
             top: 50px;
             left: 10%;
-            height: 300px;
+            height: 350px;
             width: 40%;
             border-radius: 5px;
         }
@@ -27,7 +27,7 @@
             right: 0;
             top: 50px;
             right: 10%;
-            height: 300px;
+            height: 350px;
             width: 40%;
             border-radius: 5px;
         }
@@ -94,14 +94,6 @@
             </div>
             <div id="csseditor">/* Style code (CSS) goes here */</div>
             <div id="jseditor">//Javascript goes here</div>
-            <select id='theme-css' name='theme-css'>
-                
-            </select>
-            <p class="theme-label" style="left: 10%">Theme:</p>
-            <select id='theme-js' name='theme-js'>
-                
-            </select>
-            <p class="theme-label" style="left: 50%">Theme:</p>
             <div class="button button-7 save" id="save" style="margin: 0">
                 <div class="dub-arrow"><img src="https://api.iconify.design/uil:save.svg?download=true&box=true&color=%23626262&inline=false&height=auto" alt="" /></div>
                 <a href="">Save to computer</a>
@@ -112,7 +104,7 @@
                 <a href="">Load from computer</a>
             </div>
         </div>
-        <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./src/ace.js" type="text/javascript" charset="utf-8"></script>
         <script>
             var csseditor = ace.edit("csseditor");
             csseditor.setTheme("ace/theme/tomorrow_night_eighties");
