@@ -126,7 +126,12 @@ upload_picker.onchange = function() {
 
 document.getElementById('add').addEventListener('click', function() {
 	try {
-		chrome.runtime.sendMessage('efidcbigkoegkgfbofbgdmlkgeckgkdk', {addTheme: JSON.stringify({test: 'test'})}, function(response) {
+		var dataobj = {
+			css: csseditor.getValue(),
+			js: jseditor.getValue(),
+			for: document.getElementById('site').value
+		}
+		chrome.runtime.sendMessage('efidcbigkoegkgfbofbgdmlkgeckgkdk', {addTheme: JSON.stringify(dataobj)}, function(response) {
             console.log('Theme added!');
         });
 	} catch(e) {
