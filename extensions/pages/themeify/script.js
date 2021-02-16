@@ -78,7 +78,7 @@ save.onclick = function() {
 		js: jseditor.getValue(),
 		for: document.getElementById('site').value
 	}
-	download(`${document.getElementById('site').value}.themeify`, JSON.stringify(dataobj))
+	download(`${document.getElementById('site').value.replaceAll('.', '_')}.themeify`, JSON.stringify(dataobj))
 }
 
 
