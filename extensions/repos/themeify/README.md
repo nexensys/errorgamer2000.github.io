@@ -1,1 +1,1 @@
-
+This is the repository for my Themeify Extension. After the extension is installed a button will appear next to the theme files(note that this feature is **very** buggy and you may need to reload the page once or twice). Click the button to add the theme to your extension.
