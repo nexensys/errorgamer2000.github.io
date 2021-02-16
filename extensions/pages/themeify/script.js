@@ -123,3 +123,13 @@ upload_btn.onclick = function() {
 upload_picker.onchange = function() {
 	readTheme(this.files[0])
 }
+
+document.getElementById('add').addEventListener('click', function() {
+	try {
+		chrome.runtime.sendMessage({addTheme: JSON.stringify(r)}, function(response) {
+            console.log('Theme added!');
+        });
+	} catch(e) {
+		console.log('cannot connect to extension')
+	}
+})
