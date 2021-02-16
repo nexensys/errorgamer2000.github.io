@@ -126,7 +126,7 @@ upload_picker.onchange = function() {
 
 document.getElementById('add').addEventListener('click', function() {
 	try {
-		chrome.runtime.sendMessage({addTheme: JSON.stringify(r)}, function(response) {
+		chrome.runtime.sendMessage({addTheme: JSON.stringify({test: 'test'})}, function(response) {
             console.log('Theme added!');
         });
 	} catch(e) {
