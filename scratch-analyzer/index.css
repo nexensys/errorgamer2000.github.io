@@ -68,6 +68,7 @@ audio {
   height: 75px;
   transition: all 0.35s ease-in-out;
   border-radius: 0px !important;
+  z-index: 900;
 }
 
 audio[data-hidden="false"] {
