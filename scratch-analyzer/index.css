@@ -23,6 +23,22 @@ h1 > img {
   position: relative;
 }
 
+#titlebar > p {
+  position: absolute;
+  height: calc(5.5em - 20px);
+  top: 0;
+  right: 0;
+  margin: 10px;
+  z-index: 5;
+  line-height: 4em;
+  color: white;
+  opacity: 0.5;
+}
+
+#titlebar > p > a {
+  color: white;
+}
+
 #titlebar {
   position: absolute;
   height: 5.5em;
