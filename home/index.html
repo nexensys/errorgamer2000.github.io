@@ -1,200 +1,154 @@
 <!DOCTYPE html>
 <html>
-<title>ErrorGamer2000 - Home</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<head>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.svg">
-</head>
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Lato", sans-serif
-    }
-
-    body {
-        height: 100%;
-        color: #aaa;
-        line-height: 1.8
-    }
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover
-    }
-
-    p {
-        text-indent: 2.0em
-    }
-
-    .bgimg-1 {
-        background-image: url('images/Background.jpg');
-        min-height: 100%
-    }
-
-    .bgimg-s {
-        background-image: url('images/SBanner.jpg');
-        min-height: 400px
-    }
-
-    .bgimg-2 {
-        background: black;
-        min-height: 400px
-    }
-
-    .bgimg-3 {
-        background: black;
-        min-height: 400px
-    }
-
-    .w3-wide {
-        letter-spacing: 10px
-    }
-
-    .w3-hover-opacity {
-        cursor: pointer
-    }
-
-    @media only screen and (max-device-width: 1600px) {
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            background-attachment: scroll;
-            min-height: 400px
-        }
-    }
-</style>
-
-<body>
-    <div class="w3-top">
-        <div class="w3-bar" id="myNavbar"> <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu"> <i class="fa fa-bars"></i> </a> <a href="#home" class="w3-bar-item w3-button">HOME</a>            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a> <a href="#scratch" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-code"></i> SCRATCH</a> <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GD LEVEL REQUESTS</a> <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a></div>
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"> <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a> <a href="#scratch" class="w3-bar-item w3-button" onclick="toggleFunction()">SCRATCH</a> <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">GD LEVEL REQUESTS</a> <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a></div>
-    </div>
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-        <div class="w3-display-middle" style="white-space:nowrap;"> <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ERROR <span class="w3-hide-small">GAMER</span> 2000</span>
-        </div>
-    </div>
-    <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">ABOUT ME</h3>
-        <p class="w3-center"><em>I love coding, gaming, and anything to do with computers.</em></p>
-        <p>Hi I'm ErrorGamer2000(small reference to <a href="https://www.griffpatch.co.uk/" title="Griffpatch">Griffpatch</a>), and you probably know me from scratch. I started coding in elementary school, but I wasn't very good and soon dropped it. I picked
-            it back up in highschool and have been working on it since! I enjoy music as well, and am hoping to start making my own soon. I have been playing Geometry Dash for over two years now, and I have been getting better faster and faster, and currently
-            have over 85% on Deadlocked(For those of you who play).</p>
-        <div class="w3-row">
-            <div class="w3-col m6 w3-center w3-padding-large"></div>
-            <div class="w3-col m6 w3-hide-small w3-padding-large"></div>
-        </div>
-        <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-        <p class="w3-wide"><i class="fa fa-cube"></i>Geometry Dash</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-        </div>
-        <p class="w3-wide"><i class="fa fa-laptop"></i>Coding</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-        </div>
-        <p class="w3-wide"><i class="fa fa-plus"></i>Math</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-        </div>
-    </div>
-    <div class="bgimg-s w3-display-container w3-opacity-min">
-        <div class="w3-display-middle"> <span class="w3-xxlarge w3-text-white w3-wide"></span></div>
-    </div>
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-        <div class="w3-quarter w3-section"> <span class="w3-xlarge">33+</span><br> Followers</div>
-        <div class="w3-quarter w3-section"> <span class="w3-xlarge">54+</span><br> Projects Done</div>
-        <div class="w3-quarter w3-section"> <span class="w3-xlarge">1+</span><br> Tutorials</div>
-        <div class="w3-quarter w3-section"> <span class="w3-xlarge">18+</span><br> Studios</div>
-    </div>
-    <div class="w3-content w3-container w3-padding-64" id="scratch">
-        <p>When I am on scratch, I enjoy making games and intros. I am always up to a challenge, and am currently working on creating my own 3D engine. I will also fix your scripts if you post a comment on <a href="https://scratch.mit.edu/studios/28174775">this studio</a>            with a link to your project. I am currently working on creating a Game Development class. Only seven people will be allowed to view the course at any time, and the signup project is in my projects.</p>
-    </div>
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle"> <span class="w3-xxlarge w3-text-white w3-wide">GD LEVEL REQUESTS</span></div>
-    </div>
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">LEVEL REQUESTS</h3>
-        <p class="w3-center"><em>Level requests must be sent via E-Mail. Enter the values below, then press send and send the resulting email. Please do not change the email before sending.</p><br><div class="w3-row w3-padding-32 w3-section"><div class="w3-col m4 w3-container"> <img src="images/GD.png" class="w3-image w3-round" style="width:100%"></div><div class="w3-col m8 w3-panel"><form action="/action_page.php" target="_blank"><div class="w3-row-padding" style="margin:0 -16px 8px -16px"><div class="w3-half"> <input class="w3-input w3-border" type="text" id="GDNameInput" placeholder="Geometry Dash Username" required name="Geometry Dash Username"></div><div class="w3-half"> <input class="w3-input w3-border" type="text" id="IdInput" placeholder="Level ID" required name="Level ID"></div></div> <input class="w3-input w3-border" type="text" id="RMessageInput" placeholder="Message (optional)" required name="Message (optinal)"> <button class="w3-button w3-black w3-right w3-section" type="submit" onClick="lvlRequest()"> <i class="fa fa-paper-plane"></i> SEND REQUEST </button></form></div></div></div><div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'"> <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span><div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"> <img id="img01" class="w3-image"><p id="caption" class="w3-opacity w3-large"></p></div></div><div class="bgimg-3 w3-display-container w3-opacity-min"><div class="w3-display-middle"> <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span></div></div><div class="w3-content w3-container w3-padding-64" id="contact"><h3 class="w3-center">Contact Info</h3><p class="w3-center"><em>Level Requests, Coding Help, or Feedback</em></p>
-        <div class="w3-row w3-padding-32 w3-section">
-            <div class="w3-col m4 w3-container"> <img src="images/favicon.svg" class="w3-image w3-round" style="width:100%"></div>
-            <div class="w3-col m8 w3-panel">
-                <div class="w3-large w3-margin-bottom"> <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: error2000gamer@gmail.com<br></div>
-                <p><i class="fa fa-code-fork"></i> Or contact me on <a href="https://github.com/ErrorGamer2000">Github!</a></p>
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half"> <input class="w3-input w3-border" type="text" id="NameInput" placeholder="Name" required name="Name"></div>
-                        <div class="w3-half"> <input class="w3-input w3-border" type="text" id="SubjectInput" placeholder="Subject" required name="Subject"></div>
-                    </div> <input class="w3-input w3-border" type="text" id="MessageInput" placeholder="Message" required name="Message"> <button class="w3-button w3-black w3-right w3-section" type="submit" onClick="send()"> <i class="fa fa-paper-plane"></i> SEND MESSAGE </button></form>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>ErrorGamer2000 - Home</title>
+        <link rel="icon" href="images/favicon.svg" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="js/lz-string.min.js"></script>
+    </head>
+    <body>
+        <div id="navbar" data-shadow="false">
+            <div id="navbarbg"></div>
+            <div id="navbar-main">
+                <a href="#home"><span class="iconify" data-icon="uil:home-alt" data-inline="true"></span> Home</a>
+                <a href="#about" style="left: 103px;"><span class="iconify" data-icon="uil:user" data-inline="true"></span> About Me</a>
+                <a href="#programming" style="left: 232px;"><span class="iconify" data-icon="uil:code-branch" data-inline="true"></span> Programming</a>
+                <a href="#gaming" style="left: 389px;"><span class="iconify" data-icon="uil:mouse-alt" data-inline="true"></span> Gaming</a>
+                <a href="#contact" style="left: 504px;"><span class="iconify" data-icon="uil:envelope" data-inline="true"></span> Contact</a>
+            </div>
+            <div id="navbar-secondary">
+                <a href="https://scratch.mit.edu/users/errorgamer2000" style="right: 0px; width: 70px;"><span class="iconify" data-icon="simple-icons:scratch" data-inline="true"></span> Scratch</a>
+                <a href="https://github.com/ErrorGamer2000" style="right: 110px;"><span class="iconify" data-icon="uil:github" data-inline="true"></span> Github</a>
             </div>
         </div>
-    </div>
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"> <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <div class="w3-jumbo w3-section"> <a href="https://www.youtube.com/channel/UCuK3qqLTl3oyk_Kly1x1Wng" title="ErrorGamer2000 - Youtube"><i class="fa fa-youtube-square w3-hover-opacity"></i></a></div>
-        <p>Powered by <a href="https://www.github.com" title="Github" target="_blank" class="w3-hover-text-green">Github</a></p>
-    </footer>
-    <script>
-        function send() {
-            var nme = document.getElementById('NameInput').value;
-            var sbj = document.getElementById('SubjectInput').value;
-            var mssg = document.getElementById('MessageInput').value;
-            window.open('mailto:error2000gamer@gmail.com?subject=Message from homepage by ' + nme + ' - ' + sbj + '&body=Message from homepage by ' + nme + ': ' + mssg);
-        }
-
-        function lvlRequest() {
-            var nme = document.getElementById('GDNameInput').value;
-            var lvlid = document.getElementById('IdInput').value;
-            var mssg = document.getElementById('RMessageInput').value;
-            if (isNaN(lvlid)) {
-                alert('Please enter a valid level ID');
-            } else {
-                window.open('mailto:error2000gamer@gmail.com?subject=Message from homepage by' + nme + ' - Level Request for ' + lvlid + '&body=Message from homepage by ' + nme + ': ' + mssg);
-            };
-        }
-
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-        window.onscroll = function() {
-            myFunction()
-        };
-
-        function myFunction() {
-            var navbar = document.getElementById("myNavbar");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-            } else {
-                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-            }
-        }
-
-        function toggleFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
-</body>
-
+        <div class="link" style="top: 0;" id="home"></div>
+        <div class="full width banner" id="banner">
+            <div id="bannerText">
+                <div class="blur dark"></div>
+                <p>Error Gamer 2000</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="link" style="top: 350px;" id="about"></div>
+        <div id="main-content" style="height: 4000px;">
+            <div class="header">About Me</div>
+            <div class="content" style="top: 100px; height: 120px;">
+                Hello there! I'm ErrorGamer2000. I am a part-time coding enthusiast, part time gamer in highschool, currently taking college classes. I spend about 90% of my free time programming, whether it be JavaScript, HTML, CSS, or
+                Scratch. I do my best to help however I can if someone asks, and if I don't know how to fix it off of the top of my head I will figure it out. I also really enjoy music, mostly techno, dubstep, and house. My favorite artists
+                are <a href="https://alexizgd.newgrounds.com/">ALESDA!</a>, <a href="https://f-777.newgrounds.com/">F-777</a>, <a href="https://www.youtube.com/channel/UCAA6pKrh72sARBb7JCfp8AA">Tobu</a>,
+                <a href="https://www.youtube.com/channel/UCwHQ93ecuoQne93sgY-x8Nw">BoomKitty</a>, <a href="https://www.youtube.com/channel/UCc_bv_5nmxy2xnPNg9kP3Rg">Teminite</a>,
+                <a href="https://www.youtube.com/channel/UCKU_ow8vnBKa3O3fRGERXmQ">Ahxello</a>, and <a href="https://www.youtube.com/channel/UCzMCWqaMhVC70xNVt0CcgQQ">Di Young</a>.
+            </div>
+            <div class="header" style="top: 250px; background-color: transparent; color: rgba(0, 0, 0, 0.75);">My Skillsets</div>
+            <p class="skillText" style="top: 305px;"><span class="iconify" data-icon="uil:plus-circle" data-inline="true"></span> Math</p>
+            <div class="skillBar" style="top: 350px;" id="skill-math"><div></div></div>
+            <p class="skillText" style="top: 385px;"><span class="iconify" data-icon="fa-brands:js-square" data-inline="true"></span> JavaScript</p>
+            <div class="skillBar" style="top: 430px;" id="skill-js"><div></div></div>
+            <p class="skillText" style="top: 465px;"><span class="iconify" data-icon="uil:html5" data-inline="true"></span> HTML</p>
+            <div class="skillBar" style="top: 510px;" id="skill-html"><div></div></div>
+            <p class="skillText" style="top: 545px;"><span class="iconify" data-icon="fa-brands:css3-alt" data-inline="true"></span> CSS</p>
+            <div class="skillBar" style="top: 590px;" id="skill-css"><div></div></div>
+            <p class="skillText" style="top: 625px;"><span class="iconify" data-icon="fa-brands:node" data-inline="true"></span> Node.js</p>
+            <div class="skillBar" style="top: 670px;" id="skill-node"><div></div></div>
+            <p class="skillText" style="top: 705px;"><span class="iconify" data-icon="simple-icons:scratch" data-inline="true"></span> Scratch</p>
+            <div class="skillBar" style="top: 750px;" id="skill-scratch"><div></div></div>
+            <p class="skillText" style="top: 785px;"><span class="iconify" data-icon="akar-icons:game-controller" data-inline="true"></span> Gaming</p>
+            <div class="skillBar" style="top: 830px;" id="skill-gaming"><div></div></div>
+            <div class="link" style="top: 850px;" id="programming"></div>
+            <div class="header" style="top: 900px;">Programming</div>
+            <div class="content" style="top: 1000px; height: 200px;">
+                Most of my programming is web development (HTML, CSS, and JavaScript), and I enjoy making both browser extensions and websites. Beleive it or not, I don't actually have any of the professional tools like
+                <a href="https://code.visualstudio.com/">Visual Studio Code</a>; I do all of my work with Chrome's Developer Tools. I am working on learning some of the big frameworks such as <a href="https://vuejs.org/">Vue.js</a>,
+                <a href="https://reactjs.org/">React</a>, and <a href="https://jquery.com/">jQuery</a>, though I am still inexperienced with them (actually, the first time I used jQuery was when I built this page). I am also hoping to start learning how to use
+                <a href="https://expressjs.com/">Express.js</a> to serve the sites that I make.<br />
+                <span class="tab"></span>When I am not working on web developoment, you can usually find me on <a href="https://scratch.mit.edu/users/errorgamer2000/">Scratch</a>. 
+                On Scratch I make intros and games, and if someone asks for help I will normally help them. If you need help post a comment on my profile and I will get to you as soon as possible.
+            </div>
+            <div id="scratchStats" style="top: 1220px">
+                <div id="scratchLoader">
+                    <div id="scratchSpinnerCover">
+                        <div id="scratchSpinner"></div>
+                    </div>
+                    <p>Loading Scratch Stats...</p>
+                </div>
+                <div id="bannerContainer">
+                    <div class="bannerLoader"></div>
+                </div>
+                <div id="statContainer">
+                    <div id="profileData">
+                    </div>
+                    <div id="stats">
+                        <div class="quarter top left stat" id="followers"></div>
+                        <div class="quarter top right stat" id="following"></div>
+                        <div class="quarter bottom left stat" id="projects"></div>
+                        <div class="quarter bottom right stat" id="studios"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div id="ghStats" style="top: 2120px">
+                <div id="ghLoader">
+                    <div id="ghSpinnerCover">
+                        <div id="ghSpinner"></div>
+                    </div>
+                    <p>Loading Github Stats...</p>
+                </div>
+                <div id="ghStatContainer">
+                    <div id="ghProfileData">
+                    </div>
+                    <div id="ghstats">
+                        <div class="quarter top left stat" id="ghfollowers"></div>
+                        <div class="quarter top right stat" id="ghfollowing"></div>
+                        <div class="quarter bottom left stat" id="ghrepos"></div>
+                        <div class="quarter bottom right stat" id="ghgists"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="link" style="top: 2570px;" id="gaming"></div>
+            <div class="header" style="top: 2620px;">Gaming</div>
+            <div class="content" style="top: 2720px; height: 200px;">Most of my time gaming is spent in Geometry Dash or Nuclear Throne. I have not been very active lately, mainly because school has been catching up with me. I am about 85% of the way finished with Deadlocked, and I have finished all of the official levels except the demons. If you want, I will do geometry dash level requests, just fill out the form below.</div>
+            <div id="gdRequest" style="top: 2970px">
+                <div id="gdimg">
+                    <img src="images/GD.png">
+                </div>
+                <div id="gdrequest-main">
+                    <div class="titlebar">Level Requests</div>
+                    <div id="requestDesc">Level requests must be sent via email, and will only be accepted in the form provided.</div>
+                    <form id="requestForm" action="" method="get">
+                        <input type="text" id="gdName" name="gdName" placeholder="Geometry Dash Username" autocomplete="off" required>
+                        <div id="numArrows"><p class="numArrow up"><span class="iconify" data-icon="uil:angle-up" data-inline="true"></span></p><br><p class="numArrow down"><span class="iconify" data-icon="uil:angle-down" data-inline="true"></span></p></div>
+                        <input type="number" id="gdLevel" name="gdLevel" placeholder="Geometry Dash Level ID" autocomplete="off" min="0" required>
+                        <input type="text" id="reqmsg" name="reqmsg" autocomplete="off" placeholder="Message (optional)"><br>
+                        <button><span class="iconify" data-icon="uil:fast-mail" data-inline="true"></span> Send Request</button>
+                    </form>
+                </div>
+            </div>
+            <div class="link" style="top: 3420px;" id="contact"></div>
+            <div class="header" style="top: 3470px;">Contact</div>
+            <div id="email" style="top: 3570px">
+                <div id="contactimg">
+                    <img src="images/favicon.svg">
+                </div>
+                <div id="contact-main">
+                    <form id="contactForm" action="" method="get">
+                        <input type="text" id="contactName" name="contactName" placeholder="Your Name" autocomplete="off" required>
+                        <input type="text" id="contactSubj" name="contactSubj" placeholder="Subject" autocomplete="off" required>
+                        <input type="text" id="contactmsg" name="contactmsg" autocomplete="off" placeholder="Message (optional)"><br>
+                        <button><span class="iconify" data-icon="uil:fast-mail" data-inline="true"></span> Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div id="footer">
+                <a href="#"><span class="iconify" data-icon="uil:arrow-up" data-inline="true"></span>To the top</a>
+                <a href="https://www.youtube.com/channel/UCuK3qqLTl3oyk_Kly1x1Wng"><span class="iconify" data-icon="uil:youtube" data-inline="false"></span><br>Youtube</a>
+            </div>
+        </div>
+        <img id="save-img" crossorigin="anonymous">
+        <script src="js/script.js"></script>
+    </body>
 </html>
