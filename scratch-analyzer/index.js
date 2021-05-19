@@ -128,10 +128,9 @@ function render() {
   frame += 0.5;
   let currentFrame = m.f(frame);
   let realFrame = m.f((player.currentTime / player.duration) * analyzer.normalized.length);
-  if (currentFrame !== frame) return;
   ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
   aData.forEach((bar) => {
-    bar[1] += (canvas.clientHeight * 0.5 * (analyzer.normalized[realFrame] || 0) + random(50, 100 + 50 * analyzer.normalized[realFrame]) - bar[1]) / 6;
+    if (currentFrame === frame) bar[1] += (canvas.clientHeight * 0.5 * (analyzer.normalized[realFrame] || 0) + random(50, 100 + 50 * analyzer.normalized[realFrame]) - bar[1]) / 6;
     ctx.fillRect(bar[0], 0, 30, bar[1]);
   });
 }
