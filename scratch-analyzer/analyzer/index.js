@@ -36,4 +36,5 @@ class Analyzer {
     this.audiobuffer = await this.context.decodeAudioData(this.bufferarray);
     delete this.bufferarray;
     this.initiated = true;
+  }
 }
