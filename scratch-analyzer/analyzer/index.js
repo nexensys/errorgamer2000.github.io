@@ -32,13 +32,8 @@ class Analyzer {
     let mul = m.p(m.m(...this.filtered), -1);
     this.normalized = this.filtered.map((block) => block * mul);
   }
-}
-
-Object.defineProperty(Analyzer.prototype, "init", {
-  value: async function () {
+  async init() {
     this.audiobuffer = await this.context.decodeAudioData(this.bufferarray);
     delete this.bufferarray;
     this.initiated = true;
-  },
-  enumerable: false,
-});
+}
