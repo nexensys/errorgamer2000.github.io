@@ -186,7 +186,7 @@ body::-webkit-scrollbar-thumb:hover {
     top: 0;
     left: 0;
     height: 400px;
-    background-image: url("../images/banner.jpg");
+    background-image: url("../images/banner.png");
 }
 
 .blur {
