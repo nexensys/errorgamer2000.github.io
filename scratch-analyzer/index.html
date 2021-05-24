@@ -5,6 +5,7 @@
     <title>Scratch Audio Analyzer</title>
     <link rel="icon" type="image/png" href="src/icon.png" />
     <meta charset="UTF-8" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
   <body>
     <img id="logo" src="src/icon.svg" />
@@ -68,7 +69,52 @@
       </div>
       <div class="spacer" style="height: 100px; position: absolute; top: 1450px; width: 15px;" />
     </div>
-    <audio id="main" data-hidden="true" controls></audio>
+    </div>
+    <audio id="main" data-hidden="true"></audio>
+    <div id="audioController">
+        <ul>
+          <li>
+            <button disabled data-func="prev">
+              <span class="iconify" data-icon="bx:bx-skip-previous-circle" data-inline="true"></span>
+            </button>
+          </li>
+          <li>
+            <button data-func="play">
+              <span class="iconify" data-icon="bx:bx-play-circle" data-inline="true"></span>
+            </button>
+          </li>
+          <li>
+            <button disabled data-func="next">
+              <span class="iconify" data-icon="bx:bx-skip-next-circle" data-inline="true"></span>
+            </button>
+          </li>
+          <li>
+            <span id="currentTime">00:00</span>
+          </li>
+          <li id="playBar">
+            <div>
+              <div id="barFill">
+                <div id="barHandle"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span id="duration">00:00</span>
+          </li>
+          <li>
+            <button>
+              <span class="iconify" data-icon="bx:bx-volume-full" data-inline="true"></span>
+            </button>
+            <div id="volSlider" data-hidden="true">
+              <div>
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+    </div>
     <script src="src/scratchblocks-v3.5-min.js"></script>
     <script src="setup/index.js"></script>
     <script src="analyzer/index.js"></script>
