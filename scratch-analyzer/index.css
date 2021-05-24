@@ -59,25 +59,174 @@ h1 > img {
   z-index: 5;
 }
 
-audio {
+#audioController {
   position: fixed;
-  bottom: -75px;
-  left: 0;
-  margin: 10px;
+  bottom: -50px;
   width: calc(100% - 20px);
-  height: 75px;
-  transition: all 0.35s ease-in-out;
-  border-radius: 0px !important;
-  z-index: 900;
+  left: 10px;
+  background-color: #fafafa;
+  height: 40px;
+  z-index: 10;
+  border-radius: 5px;
+  padding: 0px;
+  transition: bottom 0.35s ease-in-out;
 }
 
-audio[data-hidden="false"] {
-  bottom: 0;
+audio[data-hidden="false"] + #audioController {
+  bottom: 10px;
 }
 
-audio:focus {
+#audioController > ul {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  left: 0;
+  margin-left: -40px;
+}
+
+#audioController > ul > li {
+  display: inline;
+  float: left;
+  margin: 0px;
+}
+
+#audioController > ul > li * {
+  display: block;
+  line-height: 30px;
+}
+
+#audioController > ul > li > * {
+  margin: 5px;
+}
+
+#audioController > ul > li > button {
+  background-color: #0000;
   outline: none;
-  z-index: 900;
+  color: #4d97ff90;
+  border: none;
+  height: 30px;
+  padding: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#audioController > ul > li > button:disabled {
+  color: #0005;
+  cursor: not-allowed;
+}
+
+#audioController > ul > li > button:not([disabled]):hover {
+  color: #4d97ff;
+}
+
+#playBar {
+  height: 40px;
+}
+
+#playBar > div {
+  height: 5px;
+  margin-top: 17.5px !important;
+  background-color: #0001;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+
+#playBar > div > #barFill {
+  position: absolute;
+  height: 5px;
+  background-color: #4d97ff;
+  border-radius: 2.5px;
+}
+
+#playBar > div > #barFill > #barHandle {
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  border: 5px solid #4d97ff;
+  position: absolute;
+  transform: translate(-5px, -2.5px);
+  background-color: #4d97ff;
+  transition: all 0.25s ease-in-out, box-shadow 0.1s ease-in-out, left 0s linear;
+  opacity: 0;
+}
+
+#playBar:hover > div > #barFill > #barHandle {
+  opacity: 1;
+}
+
+#playBar > div > #barFill > #barHandle:active,
+#playBar > div > #barFill > #barHandle:hover{
+  border-width: 6px;
+  transform: translate(-6px, -3px);
+}
+
+#playBar > div > #barFill > #barHandle.focus {
+  box-shadow: 0 0 5px #0005;
+  opacity: 1;
+}
+
+#volSlider {
+  width: 15px;
+  height: 110px;
+  position: absolute;
+  background-color: #fafafa;
+  border-radius: 2.5px;
+  bottom: 45px;
+  right: 8.5px;
+  transition: right 0.25s ease-in-out;
+}
+
+#volSlider[data-hidden="true"] {
+  right: -40px;
+}
+
+#volSlider > div {
+  width: 5px;
+  height: 100px;
+  border-radius: 2.5px;
+  background-color: #0001;
+  left: 5px;
+  top: 5px;
+  position: absolute;
+}
+
+#volSlider > div > div {
+  position: absolute;
+  width: 5px;
+  height: 50%;
+  background-color: #4d97ff;
+  border-radius: 2.5px;
+  bottom: 0px;
+}
+
+#volSlider > div > div > div {
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  border: 5px solid #4d97ff;
+  position: absolute;
+  transform: translate(-3px, -3px);
+  background-color: #4d97ff;
+  transition: all 0.25s ease-in-out, box-shadow 0.1s ease-in-out, left 0s linear;
+  opacity: 0;
+}
+
+#volSlider:hover > div > div > div {
+  opacity: 1;
+}
+
+#volSlider > div > div > div:active,
+#volSlider > div > div > div:hover{
+  border-width: 6px;
+  transform: translate(-4px, -4px);
+}
+
+#volSlider > div > div > div.focus {
+  box-shadow: 0 0 5px #0005;
+  opacity: 1;
 }
 
 #overlay {
@@ -405,6 +554,8 @@ p.subtitle {
   position: absolute;
   top: 23rem;
   left: calc(50% - 500px);
+  width: 1000px;
+  overflow: hidden;
 }
 
 iframe {
