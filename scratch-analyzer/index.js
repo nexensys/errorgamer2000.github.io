@@ -108,6 +108,8 @@ async function fileChange({ data }) {
   (document.body || document.documentElement).removeChild(lnk);
   await player.play();
   volume = v;
+  document.querySelector("#duration").innerText = `${m.ro((player.duration - m.ro(player.duration % 60)) / 60)}:${m.ro(player.duration % 60) < 10 ? `0${m.ro(player.duration % 60)}` : m.ro(player.duration % 60)}`;
+  onResize();
   setButton(true);
   aData = [];
   for (let i = 0; i < m.f(canvas.clientWidth / 35) + 1; i++) {
@@ -218,9 +220,11 @@ function onplayerbarclick(e) {
   if (e.type === "mousedown" && e.target.closest("#playBar > div")) {
     mousedown = true;
     document.querySelector("#barHandle").classList.add("focus");
+    player.pause();
   } else {
     document.querySelector("#barHandle").classList.remove("focus");
     mousedown = false;
+    player.play();
   }
   mousemove(e);
 }
@@ -250,6 +254,8 @@ window.addEventListener("resize", onResize);
 setTimeout(onResize, 0);
 
 player.addEventListener("timeupdate", (e) => {
+  document.querySelector("#currentTime").innerText = `${m.ro((player.currentTime - m.ro(player.currentTime % 60)) / 60)}:${m.ro(player.currentTime % 60) < 10 ? `0${m.ro(player.currentTime % 60)}` : m.ro(player.currentTime % 60)}`;
+  onResize();
   updatePercent(player.currentTime / player.duration);
 })
 
