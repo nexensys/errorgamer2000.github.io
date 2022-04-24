@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ErrorGamer2000's Homepage - Under Construction!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+      }
+    </style>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div
+      style="
+        display: grid;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-image: url('media/foxlogowallpaper.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 0.75em;
+          place-self: center;
+          max-width: 40%;
+          text-align: center;
+          background-color: rgba(255, 255, 255, 0.85);
+          padding: 1.5em;
+          border-radius: 0.5em;
+          box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.5);
+          font-size: 1.25rem;
+        "
+      >
+        <p>Hi there! Glad to see that you are visiting my page!</p>
+        <p>
+          I am currently rebuilding at the moment, because (as you may have
+          found) the old version was, well, less than aesthetically pleasing.
+        </p>
+        <p>
+          If for some reason, you really want to visit the old page, go ahead
+          and head <a id="redirect" href="/backup/">over there</a>.
+        </p>
+        <p>
+          The new website should show up within a month, and at that point this
+          page and all of the old ones will dissappear. Thanks for your
+          patience, I hope to see you here again soon!
+        </p>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var path = "/old" + window.location.pathname;
+        document.getElementById("redirect").setAttribute("href", path);
+      })();
+    </script>
+  </body>
+</html>
